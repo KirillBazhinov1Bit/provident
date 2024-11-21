@@ -15,7 +15,6 @@ foreach($_POST as $key_post => $value_post){
 		
 		$resultData = \bitCustomPages::getDashboardSales($value_post['USER_ID'], $date['date_start'], $date['date_stop']);
 		
-		$resultData['test'] = \bitCustomPages::getIblok();
 		die(json_encode($resultData,JSON_UNESCAPED_UNICODE));
 	}
 }
