@@ -1,0 +1,47 @@
+/*| Navigation |*/
+
+.bit-top-menu{
+	background: #31353d; /* Задаем основной фон меню */
+	padding: 0 3%; /* Задаем внутренние отступы */
+	padding-left: 50px;
+	margin: 10px 0 10px 10px;
+	border-radius: 5px 0 0 5px;
+}
+
+.bit-top-menu ul {
+	list-style: none; /* Убираем маркер для элементов списка */
+}
+
+.bit-top-menu ul li {
+	display:inline-block;/*Выстраиваем пункты меню в ряд по горизонтали */
+}
+
+.bit-top-menu ul li a {
+	display:block; /* Настраиваем оформление пунктов меню */
+	padding: 15px 20px;
+	font-size: .9em;
+	color: #eee !important;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-top: 1px solid #445;
+}
+
+.bit-top-menu ul li:hover {
+	background: #445; /* Меняем фон пункта меню при наведении указателя мыши */
+}
+
+.bit-top-menu ul li ul {
+	display: none; /* Прячем пункты выпадающего блока меню */
+	position:absolute;
+	background: #31353d; /* Задаем фон выпадающего блока меню */
+	z-index: 9999;
+}
+
+.bit-top-menu ul li:hover ul {
+	display:block; /* Отображаем подменю при наведении мыши */
+}
+
+.bit-top-menu ul li ul li {
+	display:block; /* Выстраиваем по вертикали пункты выпадающего меню */
+}
